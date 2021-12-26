@@ -1,0 +1,1440 @@
+@font-face
+{
+    font-family: 'bk';
+    src: url("../Font/BKoodak.ttf");
+}
+
+@font-face
+{
+    font-family: 'vz';
+    src: url("../Font/Vazir.ttf");
+}
+
+
+
+
+*::selection
+{
+    color:#FFF;
+    background: #f16d40;
+}
+
+
+
+
+
+
+.Text_Box_Stan
+{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************Ripple**********************/
+.ripple
+{
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.ripple:hover
+{
+    background: #f1885f radial-gradient(circle, transparent 1%, #ff6f40 1%) center/15000%;
+}
+
+.ripple:active
+{
+    background-color: #f16d40;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+
+
+.ripple_text_box
+{
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.ripple_text_box:hover
+{
+    background: #FFF radial-gradient(circle, transparent 1%, #dddddd 1%) center/15000%;
+}
+
+.ripple_text_box:active
+{
+    background-color: #f2f2f2;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+
+
+
+.ripple_text_box2
+{
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.ripple_text_box2:hover
+{
+    background: #eee radial-gradient(circle, transparent 1%, #fff 1%) center/15000%;
+}
+
+.ripple_text_box2:active
+{
+    background-color: #ddd;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+
+
+
+
+
+
+
+.ripple_text
+{
+    background: #FFF;
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.ripple_text:hover
+{
+    transition: background 0.5s ease;
+    background: #ccc radial-gradient(circle, transparent 99%, #CCC 1%) center/15000%;
+}
+
+/*.ripple_text:active*/
+/*{*/
+    /*background-color: #f2f2f2;*/
+    /*background-size: 100%;*/
+    /*transition: background 0s;*/
+/*}*/
+
+
+
+/* Button style */
+/*button {*/
+    /*border: none;*/
+    /*border-radius: 2px;*/
+    /*padding: 12px 18px;*/
+    /*font-size: 16px;*/
+    /*text-transform: uppercase;*/
+    /*cursor: pointer;*/
+    /*color: white;*/
+    /*background-color: #f16d40;*/
+    /*box-shadow: 0 0 4px #999;*/
+    /*outline: none;*/
+/*}*/
+/*******************Ripple**********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*::-webkit-scrollbar
+{
+    display: none;
+}
+
+
+
+.bg-image
+{
+    /*background-image: url("http://travelhdwallpapers.com/wp-content/uploads/2014/01/DubaiMall-7.jpg");*/
+    /*background-image: url('https://i.pinimg.com/originals/5e/da/ef/5edaef95b2925ab3d70f7da0a11740ae.jpg');*/
+    /*background-image: url("https://www.echofin.co/wp-content/uploads/2017/05/parallax-01.jpg");*/
+    /*background-image: url("http://www.incomeactivator.com/images/freebg1.jpg");*/
+    background-image: url("../Image/Header_Main/header_Main.jpg");
+    /*filter: blur(8px);*/
+    /*-webkit-filter: blur(8px);*/
+    height: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -100px;
+    background-attachment: fixed;
+}
+
+
+.bg-text
+{
+    /*background-color: rgb(0,0,0);*/
+    /*background-color: rgba(0,0,0, 0.4);*/
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    font-family: 'bk';
+    font-size: 28px;
+    border-bottom: solid 5px #f16d40;
+    text-shadow: 2px 2px #333;
+
+}
+
+@media screen and (max-width: 1088px)
+{
+    .bg-text
+    {
+        font-size: 20px;
+    }
+}
+
+
+#brs
+{
+    box-shadow: 0 -1px 3px rgba(0,0,0,0.12), 0 -1px -2px rgba(0,0,0,0.24);
+    width: 110%;
+    height: 70px;
+    background: #ffffff;
+    transform: skew(10deg, 3deg);
+    margin-top: -30px;
+    margin-left: -20px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+#down_btn
+{
+    padding: 25px;
+    border: none;
+    background: #f16d40;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+
+#start_btn
+{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************ICONS**********************/
+
+
+#icons_div
+{
+    width: 100%;
+
+    background: #f9f9f9;
+    margin-top: 35px;
+}
+
+
+
+#header_icon_text
+{
+    padding-top: 75px;
+}
+
+
+#header_icon_text h1
+{
+    text-align: center;
+    font-family: 'bk';
+    font-size: 24px;
+}
+
+
+#spn
+{
+
+    width: 100px;
+    background: #102030;
+    border: solid 1px #f16d40;
+    margin-top: 20px;
+
+}
+
+
+
+
+
+
+.icon_colnum
+{
+    width: 100%;
+    height: 300px;
+    /*background: #102030;*/
+    margin: 10px;
+
+}
+
+
+.material-icons
+{
+    cursor: pointer;
+    font-size: 60px !important;
+    color: #f16d40;
+}
+
+
+/*.icon_colnum:hover .material-icons*/
+/*{*/
+    /*color: #f16d40;*/
+    /*transform: scale(1.2);*/
+    /*transition: all 0.5s ease-in-out;*/
+    /*cursor: pointer;*/
+/*}*/
+
+
+/*.more_btn*/
+/*{*/
+    /*background: #FFF;*/
+    /*border: solid 4px #f16d40;*/
+    /*padding-top: 7px;*/
+    /*padding-bottom: 7px;*/
+    /*padding-left: 15px;*/
+    /*padding-right: 15px;*/
+    /*cursor: pointer;*/
+    /*border-radius: 20px;*/
+    /*margin-top: -10px;*/
+    /*color: #555;*/
+/*}*/
+
+
+.icon_colnum:hover .icon_colnum
+{
+    color: #f16d40;
+}
+
+
+.more_btn:hover,.icon_colnum:hover .more_btn
+{
+    transition: all 0.5s ease-in-out;
+    background: #f16d40;
+    color: #FFF;
+}
+
+
+.hh3
+{
+    font-family: bk;
+    font-size: 19px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.ppp
+{
+    font-family: bk;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/****************ICONS**********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************SEARCH**********************/
+
+#top_search_bar
+{
+    box-shadow: 0 -1px 3px rgba(0,0,0,0.12), 0 -1px -2px rgba(0,0,0,0.24);
+    width: 110%;
+    height: 70px;
+    transform: skew(10deg, -3deg);
+    margin-top: -120px;
+    margin-left: -20px;
+    overflow: hidden;
+    background: #f9f9f9;
+}
+
+
+#search_div
+{
+    /*background: url('https://wallpaper-house.com/data/out/7/wallpaper2you_197442.jpg');*/
+    /*background-image: url(https://www.echofin.co/wp-content/uploads/2017/05/parallax-01.jpg);*/
+    /*background-image: url("https://juegosrev.com/wp-content/uploads/2017/06/Wood-Backgrounds-HD-Gallery-58-Plus-PIC-WPW5012516.jpg");*/
+    background-image: url("../Image/Header_Main/Search.jpg");
+    /*filter: blur(8px);*/
+    /*-webkit-filter: blur(8px);*/
+    height: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -100px;
+    /*background-attachment: fixed;*/
+    margin-top: -125px;
+    background-attachment: fixed;
+}
+
+
+#down_search_bar
+{
+    box-shadow: 0 -1px 3px rgba(0,0,0,0.12), 0 -1px -2px rgba(0,0,0,0.24);
+    width: 110%;
+    height: 70px;
+    background: #ffffff;
+    transform: skew(10deg, 3deg);
+    margin-top: -30px;
+    margin-left: -20px;
+    overflow: hidden;
+    z-index: 99999;
+}
+
+
+
+#serch
+{
+    width: 35%;
+    height: 50px;
+    background: #FFF;
+    border-radius: 20px;
+}
+
+
+#serach_Text_Box
+{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+
+
+.search_btn
+{
+    width: 50px;
+    height: 50px;
+    background: #f16d40;
+    border-radius: 50%;
+    padding: 11.5px;
+    font-size: 24px !important;
+    color: #FFF;
+    outline: none;
+}
+
+.search_btn:hover
+{
+    color: #CCC;
+}
+
+
+
+
+@media screen and (max-width: 1088px)
+{
+    #serch
+    {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    #serch
+    {
+        width: 85%;
+    }
+}
+
+/****************SEARCH**********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************Slider***********************/
+
+
+.present_div
+{
+    width: 100%;
+    height: 750px;
+}
+
+#myswiper
+{
+    width: 100%;
+    height: 600px;
+}
+
+
+.slider_item
+{
+
+    margin: 10px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+
+
+.slider_item img
+{
+    width: 400px;
+    height: 250px;
+    border: none;
+    outline: none;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+}
+
+
+.slider_item a
+{
+    background: #f16d40;
+    color: #FFF;
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    border-radius: 20px;
+    font-family: 'bk';
+}
+
+
+.slider_item a:hover
+{
+    color: #eee;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+
+
+.slider_item p
+{
+    margin: 10px;
+    font-family: 'vz';
+    padding-bottom: 50px;
+}
+
+
+
+@media screen and (max-width: 601px)
+{
+    .slider_item img
+    {
+        /*width: 350px;*/
+        height: 300px;
+        border: none;
+        outline: none;
+    }
+
+}
+
+
+
+.slider_item:hover
+{
+
+
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    background-size: 100%;
+    transition: background 0s;
+
+}
+
+
+
+/**************Slider**************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************Foooooooter Start*******************/
+
+#footer
+{
+    width: 100%;
+    height: 250px;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    font-family: 'vz';
+}
+
+
+#footer-center
+{
+    width: 350px;
+    height: 100px;
+    margin-top: 50px;
+}
+
+
+/*#footer-center>div>a:hover*/
+/*{*/
+    /*color: #118fe4 !important;*/
+    /*transition: all 0.2s ease-in-out;*/
+    /*transform: scale(1.2);*/
+/*}*/
+
+
+.fa
+{
+    color: #f16d40 !important;
+    font-size: 28px !important;
+}
+
+/*******************Foooooooter End*******************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************Login***************************/
+
+.frm_sign
+{
+    font-family: 'vz';
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    margin: 50px;
+    border-top: solid 1px #EEE;
+    background: #FFF;
+}
+
+.text_form
+{
+    font-family: 'vz';
+    width: 300px;
+    height: 35px;
+    text-align: center;
+    border-radius: 20px;
+    border: solid 1px #CCC;
+    outline: none;
+    padding: 15px;
+}
+
+
+#submit
+{
+    font-family: 'vz';
+    padding: 0 !important;
+    border: none !important;
+    background: #f16d40;
+    color: #FFF;
+}
+
+/***********************Login End***************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************Page*******************/
+
+
+#Users_list
+{
+
+}
+
+
+.User_ListS
+{
+    font-family: 'bk';
+}
+
+
+.User_ListS img
+{
+
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    border: solid 2px #CCC;
+
+}
+
+
+
+#Image_list
+{
+
+}
+
+
+.Context
+{
+
+    width: 100%;
+    padding-bottom: 100px;
+    padding-top: 100px;
+
+}
+
+
+.colnum_image img
+{
+    border: none;
+}
+
+
+
+.Context_Text p
+{
+    font-family: 'bk';
+    font-size: 20px;
+    margin: 25px;
+}
+
+
+
+@media screen and (max-width: 760px)
+{
+
+    .Context_Text p
+    {
+        border-bottom: solid 1px #f16d40;
+        padding-bottom: 50px;
+    }
+
+
+
+
+}
+
+
+
+.Context_Text h1
+{
+    font-family: 'bk';
+    font-size: 28px;
+    margin: 25px;
+}
+
+
+
+
+.img_top
+{
+
+    border-radius: 50%;
+}
+
+/******************Page End***************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************User Panel Css**************************/
+
+
+.menu_side_user
+{
+    float: right;
+    background: #f7f7f7;
+    width: 20%;
+    padding-bottom: 50px;
+    overflow: scroll;
+}
+
+
+
+.menu_side_store
+{
+    float: right;
+    background: #f7f7f7;
+    width: 30%;
+    padding-bottom: 50px;
+    overflow: scroll;
+}
+
+
+
+
+.Home_Content,.New_Store
+{
+    width: 78%;
+    padding-bottom: 70px;;
+}
+
+
+@media screen and (max-width: 760px)
+{
+    .Home_Content,.New_Store
+    {
+        width: 100%;
+    }
+
+    .menu_side_user
+    {
+        float: none;
+        width: 100%;
+    }
+
+
+    .menu_side_store
+    {
+        float: none;
+        width: 100%;
+    }
+
+    .Strore_item_Home_content_Panel
+    {
+        margin: 0px !important;
+        width: 100%;
+        height: 350px;
+        margin-left: 0px !important;
+    }
+
+}
+
+
+
+
+
+.Profile_img
+{
+
+    width: 100%;
+    padding-bottom: 20px;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/2/2b/Towers_in_Tehran_City_at_night.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+
+.Profile_img>img
+{
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+
+
+.items_list
+{
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+.items_list ul li
+{
+    padding: 5px;
+}
+
+.items_list ul li a
+{
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: #333 !important;
+    border-radius: 20px !important;
+}
+
+
+
+
+.Strore_item_Home_content_Panel
+{
+    margin: 10px;
+    width: 100%;
+    height: 350px;
+    margin-left: 30px;
+}
+
+
+
+
+.Strore_item_Home_content_Panel img
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px
+}
+
+
+.Strore_item_Home_content_Panel img:hover
+{
+    transition: all 0.3s ease-in-out;
+    /*-webkit-box-shadow: 0px 0px 202px -7px rgba(0,0,0,0.75);*/
+    /*-moz-box-shadow: 0px 0px 202px -7px rgba(0,0,0,0.75);*/
+    /*box-shadow: 0px 0px 202px -7px rgba(0,0,0,0.75);*/
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.New_Store
+{
+    display: block;
+}
+
+
+
+.name_store_bar
+{
+    width: 350px;
+    height: 50px;
+    border: solid 1px #CCC;
+    border-radius: 20px;;
+}
+
+
+.name_store_bar>select
+{
+    padding-right: 5px;
+    padding-left: 5px
+}
+
+
+.maps_store_bar
+{
+    width: 70%;
+    height: 500px;
+    border: solid 1px #CCC;
+    border-radius: 20px;
+}
+
+
+
+.combo
+{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 20px;
+    outline: none;
+    background: #FFF;
+    direction: rtl;
+    align-content: center;
+    border: none;
+}
+
+.combo option
+{
+    text-align: center;
+}
+
+
+
+
+.submit_btn,.submit_btn input
+{
+    width: 100%;
+    height: 50px;
+    background: #f16d40;
+    border: none;
+    border-radius: 20px;
+    color: #FFF;
+    outline: none;
+}
+
+
+
+.submit_btn
+{
+    width: 70%;
+}
+
+
+
+.Location_icon
+{
+    width: 50px;
+    height: 50px;
+    align-content: center;
+    z-index: 99999;
+    position: absolute;
+    margin: -2%;
+    margin-top: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.New_command
+{
+    display: block;
+}
+
+
+
+.New_command>center>form
+{
+    width: 70%;
+    height: 500px;
+}
+
+
+
+.form_border_user_panel
+{
+    width: 350px;
+    height: 50px;
+    border: solid 1px #CCC;
+    border-radius: 20px;
+}
+
+
+
+
+.form_border_user_panel_text_Area_big_hight
+{
+    width: 98%;
+    height: 250px;
+    border: solid 1px #CCC;
+    border-radius: 20px;
+}
+
+
+
+#command_text_area
+{
+    resize: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#prc
+{
+    display: block;
+    width: 78%;
+    height: 100px;
+    background: #FFF;
+    margin: 10px;
+    padding-bottom: 30%;
+    margin-top: 150px;
+}
+
+
+
+
+.prc_center
+{
+    margin: 10px;
+    background: #FFF;
+    padding: 20px;
+    border: solid 1px #CCC;
+    border-radius: 8px;
+}
+
+
+
+
+
+@media screen and (max-width: 760px)
+{
+
+    #prc
+    {
+        width: 100%;
+        margin: 0px;
+        padding-bottom: 30%;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+/******************************User Panel Css End**************************/
+
+
+
+
+
+
+
+
